@@ -1,0 +1,7 @@
+path : .\
+train : images\train
+val : images\eval
+
+
+names:
+  0: Peace-sign
