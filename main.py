@@ -1,8 +1,10 @@
 from ultralytics import YOLO
-
+import os
+dirname = os.path.dirname(__file__)
+config = os.path.join(dirname, 'config.yaml')
 # Load a model
 # model = YOLO("yolo11n.pt") Modelo Padrão do yolo
-model = YOLO("runs/detect/train/weights/best.pt")  # Modelo Treinado com o Peace-Sign
+model = YOLO("C:\\Users\leand\OneDrive\Área de Trabalho\\15_03_2025\\Peace-Sign-Detector-Using-Yolo\\runs\\detect\\train\\weights\\best.pt")  # Modelo Treinado com o Peace-Sign
 # Train the model
 '''
 train_results = model.train(
@@ -13,4 +15,4 @@ train_results = model.train(
 )
 '''
 #Eval
-results = model.val(data="config.yaml")
+results = model.val(data=config)

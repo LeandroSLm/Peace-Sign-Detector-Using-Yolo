@@ -1,4 +1,5 @@
-path : .\
+#path does not work well with relative path so use your global path instead
+path : C:\Users\leand\OneDrive\Área de Trabalho\15_03_2025\Peace-Sign-Detector-Using-Yolo\datasets 
 train : images\train
 val : images\eval
 
