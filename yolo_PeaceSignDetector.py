@@ -15,4 +15,4 @@ train_results = model.train(
 )
 '''
 #Eval
-results = model.val(data=config)
+#results = model.val(data=config)
